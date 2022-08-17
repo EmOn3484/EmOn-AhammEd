@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.contai{
+  display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 2000px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    
+}
+.contai .card{
+    position: relative;
+   width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+   inset -5px -5px 5px rgba(255,255,255,0.5),
+   5px 5px 5px rgba(0,0,0,0.05),
+   -5px -5px 5px rgba(255,255,255,0.5) ;
+   border-radius: 15px;
+   margin: 30px;
+   transition: 0.5s;
+}
+.contai .card:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg,#b95ce4,#4f29cd);
+
+}
+.contai .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.01);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contai .card .box .content{
+    padding: 20px;
+    text-align: center;
+}
+.contai .card .box .content h2{
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255,255,255,0.5);
+    transition: 0.5s;
+}
+.contai .card:hover .box .content h2{
+    color: rgba(255,255,255,0.5);
+}
+.contai .card .box .content h3{
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.contai .card:hover .box .content h3,
+.contai .card:hover .box .content p
+{
+    color: #fff;
+}
+.contai .card .box .content p{
+    font-size: 1em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+    font-weight: 300;
+}
+.contai .card .box .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #03a9f4;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+}
+.contai .card:hover .box .content a{
+    background: #ff568f;
+}
+
+section{
+    width: 100%;
+    align-items: center;
+    padding-bottom: 20px;
+}
